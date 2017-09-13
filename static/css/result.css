@@ -1,0 +1,36 @@
+.result {
+  display: inline-block;
+  width: 100%;
+}
+
+.result__header {
+  margin: 0;
+  padding: 0;
+  background: #66757f;
+  border-bottom: 4px solid #fb8805;
+  padding: 0.3em;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.result__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  padding: 0.3em;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.result__list__item {
+  overflow: hidden;
+  text-align: left;
+  padding-top: 0.3em;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.result__list__item:hover {
+  background: #eaeaea;
+}

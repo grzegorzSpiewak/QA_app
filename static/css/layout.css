@@ -1,0 +1,22 @@
+html {
+  font-family: 'Roboto Condensed', sans-serif;
+	min-height: 100%;
+	height: 100%;
+}
+body {
+	min-height: 100%;
+	height: 100%;
+	max-width: 100%;
+	background: #eaeaea;
+  color: #66757f;
+}
+
+.wrap {
+	width: calc(100% - 2rem);
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.orange__text {
+	color: #fb8805;
+}
