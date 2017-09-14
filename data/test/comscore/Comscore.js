@@ -1,6 +1,13 @@
 const Comscore = {
+  header: "Expected variables in this call",
   items: [
-    "ns_st_pu", "ns_st_pr", "ns_st_ep", "ns_st_sn", "ns_st_en", "ns_st_st", "c6"
+    {name: "ns_st_pu"},
+    {name: "ns_st_pr"},
+    {name: "ns_st_ep"},
+    {name: "ns_st_sn"},
+    {name: "ns_st_en"},
+    {name: "ns_st_st"},
+    {name: "c6"},
   ],
 }
 

@@ -1,8 +1,7 @@
 import Router from 'next/router'
 import React, {Component} from 'react'
 
-import Missing from '../Missing'
-import Present from '../Present'
+import Result from '../Result'
 import FlexContainer from '../FlexContainer'
 
 class CompareResults extends React.Component {
@@ -56,28 +55,36 @@ class CompareResults extends React.Component {
     const varToCheck = this.handlePasteData(pasteData)
     const varToCheckNames = varToCheck.map(check => check.name)
     const presentNames = []
-    const presentData = []
-    const missingNames = []
+    const presentData = {
+      header: "Variables present in this call:",
+      items: []
+    }
+    const missingData = {
+      header: "Variables missing from this call:",
+      items: []
+    }
 
     if(varRequired.length !== varToCheckNames.length) {
-      varRequired.forEach(reqName => {
-        if(!varToCheckNames.includes(reqName)) {
-          missingNames.push(reqName)
+      varRequired.forEach(reqVar => {
+        if(!varToCheckNames.includes(reqVar.name)) {
+          missingData.items.push(reqVar)
         } else {
-          presentNames.push(reqName)
+          presentNames.push(reqVar)
         }
       })
     }
 
     varToCheck.map(searched => {
       const name = searched.name
-      if(presentNames.includes(name)) {
-        presentData.push(searched)
-      }
+      presentNames.forEach((item) => {
+        if(name === item.name) {
+          presentData.items.push(searched)
+        }
+      })
     })
 
     this.setState({
-      missingNames,
+      missingData,
       presentData
     })
   }
@@ -91,8 +98,9 @@ class CompareResults extends React.Component {
           <input type="button" value="Compare" name="compare_results" className="compare__form__submit" onClick={ this.compareResults.bind(this) }/>
         </form>
 
-          { this.state && this.state.missingNames ? <Missing {...this.state.missingNames} /> : null }
-          { this.state && this.state.presentData ? <Present {...this.state.presentData} /> : null }
+          { this.state && this.state.presentData ? <Result {...this.state.presentData} /> : null }
+          { this.state && this.state.missingData ? <Result {...this.state.missingData} /> : null }
+
 
       </section>
     )

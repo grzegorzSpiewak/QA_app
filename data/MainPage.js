@@ -6,16 +6,16 @@ const MainPage = {
     ]
   },
   informations: {
-    text: "How to use test rail assistant?",
+    header: "How to use test rail assistant?",
     items: [
-      {tip: "1. Open Charles and save logs from testing"},
-      {tip: "2. Crate Test rail"},
-      {tip: "3. Select test from options and press GO"},
-      {tip: "4. Search for required call in Charles and copy all content"},
-      {tip: "5. Paste results to text area input"},
-      {tip: "6. Click compare"},
-      {tip: "7. The result for test will be displayed"},
-      {tip: "8. Validate missing variables and present values"},
+      {name: "1. Open Charles and save logs from testing"},
+      {name: "2. Crate Test rail"},
+      {name: "3. Select test from options and press GO"},
+      {name: "4. Search for required call in Charles and copy all content"},
+      {name: "5. Paste results to text area input"},
+      {name: "6. Click compare"},
+      {name: "7. The result for test will be displayed"},
+      {name: "8. Validate missing variables and present values"},
     ]
   },
   select: {

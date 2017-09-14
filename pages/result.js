@@ -5,7 +5,7 @@ import React from 'react'
  */
 import CompareResults from '../components/Forms/CompareResults'
 import Header from '../components/Header'
-import Expected from '../components/Expected'
+import Informations from '../components/Informations'
 import FlexContainer from '../components/FlexContainer'
 import SelectSuite from '../components/Forms/SelectSuite'
 /**
@@ -22,21 +22,16 @@ export default class Result extends React.Component {
     return { testNameData, testName }
   }
 
-  makeReadableName (name) {
-    const split = JSON.stringify(name).match(/[A-Z][a-z]+|[0-9]+/g).join(" ")
-    return split
-  }
-
   render () {
     const testNameData = this.props.testNameData
     const testName = this.props.testName
 
     return (
       <div>
-        <Header { ...ResultPageContent.header } />
+        <Header { ...MainPageContent.header } />
         <FlexContainer>
-          <Expected {...testNameData } />
-          <CompareResults { ...testNameData } />
+          <Informations { ...testNameData } />
+          <CompareResults { ...testNameData} />
         </FlexContainer>
       </div>
     )

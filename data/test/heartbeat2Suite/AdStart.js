@@ -1,8 +1,18 @@
 const AdStart = {
+  header: "Expected variables in this call",
   items: [
-    "s:event:type", "s:asset:type", "s:sc:tracking_server","s:sc:rsid", "l:asset:ad_length",
-    "s:asset:ad_id", "s:asset:pod_position", "s:meta:video.advertiser", "s:meta:video.adpodposition",
-    "s:meta:video.adtitle", "s:meta:video.adpodinposition", "s:meta:video:adtype"
+    {name: "s:event:type"},
+    {name: "s:asset:type"},
+    {name: "s:sc:tracking_server"},
+    {name: "s:sc:rsid"},
+    {name: "l:asset:ad_length"},
+    {name: "s:asset:ad_id"},
+    {name: "s:asset:pod_position"},
+    {name: "s:meta:video.advertiser"},
+    {name: "s:meta:video.adpodposition"},
+    {name: "s:meta:video.adtitle"},
+    {name: "s:meta:video.adpodinposition"},
+    {name: "s:meta:video:adtype"},
   ],
 }
 
