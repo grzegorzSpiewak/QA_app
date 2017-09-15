@@ -10,6 +10,8 @@ const VideoCompleteLive = {
     {name: "s:sp:player_name"},
     {name: "l:event:playhead"}
   ],
+  testName: "Heartbeat 2x Video Live Complete",
+  testDetails: "Search for call with s:event:type <b>complete</b> and s:asset:type <b>main</b>",
 }
 
 export default VideoCompleteLive

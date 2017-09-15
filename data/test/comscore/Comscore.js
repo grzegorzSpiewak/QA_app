@@ -9,6 +9,8 @@ const Comscore = {
     {name: "ns_st_st"},
     {name: "c6"},
   ],
+  testName: "Comscore",
+  testDetails: "Look for tracking server http://b.scorecardresearch.com",
 }
 
 export default Comscore

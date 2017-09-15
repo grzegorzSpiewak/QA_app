@@ -59,6 +59,8 @@ const VideoStart = {
     {name: "s:meta:a.media.feed"},
     {name: "s:meta:a.media.format"},
   ],
+  testName: "Heartbeat 2x Video Start",
+  testDetails: "Search for call with s:event:type <b>start</b> and s:asset:type <b>main</b>",
 }
 
 export default VideoStart

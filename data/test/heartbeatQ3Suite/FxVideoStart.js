@@ -40,6 +40,8 @@ const VideoStart = {
     {name: "s:meta:video.closedcaptionoptions"},
     {name: "s:meta:video.source"},
   ],
+  testName: "Heartbeat Q3 FX Video Start",
+  testDetails: "Search for call with s:event:type <b>start</b> and s:asset:type <b>main</b>",
 }
 
 export default VideoStart

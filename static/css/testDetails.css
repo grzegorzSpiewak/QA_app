@@ -1,0 +1,29 @@
+.test-details {
+  padding: 2rem 0 0 0;
+}
+
+.test-details__wrap {
+  background-color: #FFF;
+  width: calc(100% - 2rem);
+	max-width: 1280px;
+	margin: 0 auto;
+  border: 2px solid rgba(0,0,0,0.15);
+}
+
+.test-details__header {
+  margin: 0;
+  padding: 0.3em;
+  background: #66757f;
+  border-bottom: 4px solid #fb8805;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.test-details__caption {
+  font-size: 1rem;
+  padding: 0.3em;
+  font-weight: lighter;
+  line-height: 1.2rem;
+  margin: 0;
+}

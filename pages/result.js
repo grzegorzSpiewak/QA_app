@@ -8,6 +8,8 @@ import Header from '../components/Header'
 import Informations from '../components/Informations'
 import FlexContainer from '../components/FlexContainer'
 import SelectSuite from '../components/Forms/SelectSuite'
+import TestDetails from '../components/TestDetails'
+import NextTest from '../components/NextTest'
 /**
  * Content
  */
@@ -19,19 +21,22 @@ export default class Result extends React.Component {
   static getInitialProps ({ query }) {
     const testName = query.name.split('" "')
     const testNameData = TestCases[testName]
-    return { testNameData, testName }
+    return { testNameData }
   }
 
   render () {
     const testNameData = this.props.testNameData
-    const testName = this.props.testName
 
     return (
       <div>
         <Header { ...MainPageContent.header } />
+        <TestDetails { ...testNameData } />
         <FlexContainer>
           <Informations { ...testNameData } />
-          <CompareResults { ...testNameData} />
+          <CompareResults { ...testNameData } />
+        </FlexContainer>
+        <FlexContainer>
+          <NextTest { ...TestCases} />
         </FlexContainer>
       </div>
     )

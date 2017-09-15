@@ -37,6 +37,8 @@ const VideoStart = {
     {name: "s:meta:video.isRestart"},
     {name: "s:meta:user.dcg_profile_id"},
   ],
+  testName: "Heartbeat Q3 FSGO Video Start",
+  testDetails: "Search for call with s:event:type <b>start</b> and s:asset:type <b>main</b>",
 }
 
 export default VideoStart

@@ -9,6 +9,8 @@ const AdPlay = {
     {name: "s:asset:ad_id"},
     {name: "s:asset:pod_position"},
   ],
+  testName: "Heartbeat 2x Ad play",
+  testDetails: "Search for call with s:event:type <b>play</b> and s:asset:type <b>ad</b>",
 }
 
 export default AdPlay

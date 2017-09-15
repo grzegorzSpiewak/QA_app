@@ -3,7 +3,6 @@
   margin-left: 1rem;
   background: #fff;
   border: 2px solid rgba(0,0,0,0.15);
-  border-radius: 0.5em;
 }
 
 .compare__header {
@@ -39,16 +38,17 @@
   display: inline-block;
   margin: 0.9rem;
   padding: 0.2rem 1rem 0.2rem 1rem;
-  background-color: #fff;
+  background-color: #66757f;
   border: none;
   text-decoration: none;
-  color: #66757f;
-  border: 1px solid rgba(0,0,0,0.15);
+  color: #fff;
+  border: 1px solid #fb8805;
   outline: none;
 }
 
 .compare__form__submit:hover {
   background-color: #fb8805;
+  border: 1px solid #66757f;
   color: #fff;
-  transition: all 0.3s ease
+  transition: all 0.3s ease;
 }

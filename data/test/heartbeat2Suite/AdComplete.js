@@ -9,6 +9,8 @@ const AdComplete = {
     {name: "s:asset:ad_id"},
     {name: "s:asset:pod_position"},
   ],
+  testName: "Heartbeat 2x Ad complete",
+  testDetails: "Search for call with s:event:type <b>complete</b> and s:asset:type <b>ad</b>",
 }
 
 export default AdComplete

@@ -3,11 +3,6 @@
   margin-left: 1rem;
   background: #fff;
   border: 2px solid rgba(0,0,0,0.15);
-  border-radius: 0.5em;
-}
-
-.select__form {
-
 }
 
 .select__form__header {
@@ -26,7 +21,7 @@
   font-size: 1rem;
   font-weight: lighter;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 100%;
 }
@@ -47,15 +42,17 @@
 
 .select__form__submit {
   padding: 0.2rem 1rem 0.2rem 1rem;
-  background-color: #fff;
+  background-color: #66757f;
   border: none;
   text-decoration: none;
-  color: #66757f;
-  border: 1px solid rgba(0,0,0,0.15);
+  color: #fff;
+  border: 1px solid #fb8805;
+  outline: none;
 }
 
 .select__form__submit:hover {
   background-color: #fb8805;
+  border: 1px solid #66757f;
   color: #fff;
-  transition: all 0.3s ease
+  transition: all 0.3s ease;
 }

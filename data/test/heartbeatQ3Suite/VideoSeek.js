@@ -10,6 +10,8 @@ const VideoSeek = {
     {name: "s:sp:player_name"},
     {name: "l:event:playhead"},
   ],
+  testName: "Heartbeat Q3 Video Seek",
+  testDetails: "Search for call with s:event:type <b>start</b> and s:asset:type <b>main</b>",
 }
 
 export default VideoSeek

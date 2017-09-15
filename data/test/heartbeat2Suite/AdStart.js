@@ -14,6 +14,8 @@ const AdStart = {
     {name: "s:meta:video.adpodinposition"},
     {name: "s:meta:video:adtype"},
   ],
+  testName: "Heartbeat 2x Ad start",
+  testDetails: "Search for call with s:event:type <b>start</b> and s:asset:type <b>ad</b>",
 }
 
 export default AdStart

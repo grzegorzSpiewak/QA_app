@@ -64,15 +64,14 @@ class CompareResults extends React.Component {
       items: []
     }
 
-    if(varRequired.length !== varToCheckNames.length) {
-      varRequired.forEach(reqVar => {
-        if(!varToCheckNames.includes(reqVar.name)) {
-          missingData.items.push(reqVar)
-        } else {
-          presentNames.push(reqVar)
-        }
-      })
-    }
+    varRequired.forEach(reqVar => {
+      if(!varToCheckNames.includes(reqVar.name)) {
+        missingData.items.push(reqVar)
+      } else {
+        presentNames.push(reqVar)
+      }
+    })
+
 
     varToCheck.map(searched => {
       const name = searched.name
@@ -97,11 +96,8 @@ class CompareResults extends React.Component {
           <textarea className="compare__form__textarea"onChange={ this.handleVariables.bind(this) }/>
           <input type="button" value="Compare" name="compare_results" className="compare__form__submit" onClick={ this.compareResults.bind(this) }/>
         </form>
-
           { this.state && this.state.presentData ? <Result {...this.state.presentData} /> : null }
           { this.state && this.state.missingData ? <Result {...this.state.missingData} /> : null }
-
-
       </section>
     )
   }

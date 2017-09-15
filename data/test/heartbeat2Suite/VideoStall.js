@@ -10,6 +10,8 @@ const VideoStall = {
     {name: "s:sp:player_name"},
     {name: "l:event:playhead"},
   ],
+  testName: "Heartbeat 2x Video Stall",
+  testDetails: "Search for call with s:event:type <b>stall</b> and s:asset:type <b>main</b>",
 }
 
 export default VideoStall
