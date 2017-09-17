@@ -36,8 +36,9 @@ export default class Result extends React.Component {
           <CompareResults { ...testNameData } />
         </FlexContainer>
         <FlexContainer>
-          <NextTest { ...TestCases} />
+          <NextTest { ...testNameData} />
         </FlexContainer>
+        <TestDetails { ...testNameData } />
       </div>
     )
   }
