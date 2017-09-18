@@ -35,10 +35,6 @@ export default class Result extends React.Component {
           <Informations { ...testNameData } />
           <CompareResults { ...testNameData } />
         </FlexContainer>
-        <FlexContainer>
-          <NextTest { ...testNameData} />
-        </FlexContainer>
-        <TestDetails { ...testNameData } />
       </div>
     )
   }
