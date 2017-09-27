@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunkMiddleware from 'redux-thunk'
-import rootReducer from './reducers/index'
+import reducer from './reducers/index'
 
 const exampleInitialState = {
   lastUpdate: 0,
@@ -10,5 +10,5 @@ const exampleInitialState = {
 }
 
 export const initStore = (initialState = exampleInitialState) => {
-  return createStore(rootReducer, initialState, composeWithDevTools(applyMiddleware(thunkMiddleware)))
+  return createStore(reducer, initialState, composeWithDevTools(applyMiddleware(thunkMiddleware)))
 }

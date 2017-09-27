@@ -44,7 +44,7 @@ class Index extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch, state) => {
-  console.log(dispatch)
+  console.log(state)
   return {
     addCount: bindActionCreators(addCount, dispatch),
     startClock: bindActionCreators(startClock, dispatch)
